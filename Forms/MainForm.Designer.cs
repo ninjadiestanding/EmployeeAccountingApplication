@@ -269,6 +269,7 @@
             // 
             // EmployeesDataGridView
             // 
+            EmployeesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             EmployeesDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             EmployeesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             EmployeesDataGridView.Location = new System.Drawing.Point(6, 112);
@@ -381,6 +382,7 @@
             // 
             // DepartmentDataGridView
             // 
+            DepartmentDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             DepartmentDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             DepartmentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DepartmentDataGridView.Location = new System.Drawing.Point(5, 112);
@@ -554,7 +556,6 @@
             Name = "MainForm";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Учет сотрудников";
-            Load += MainForm_Load;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             panel3.ResumeLayout(false);

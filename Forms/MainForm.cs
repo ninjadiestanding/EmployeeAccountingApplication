@@ -50,28 +50,6 @@ namespace EmployeeAccountingApplication
             StatDepartmentsComboBox.SelectedItem = null;
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            EmployeesDataGridView.Columns["Id"].Width = 40;
-            EmployeesDataGridView.Columns["FullName"].Width = 200;
-            EmployeesDataGridView.Columns["PersonnelNumber"].Width = 80;
-            EmployeesDataGridView.Columns["Position"].Width = 170;
-            EmployeesDataGridView.Columns["DepartmentName"].Width = 115;
-            EmployeesDataGridView.Columns["Email"].Width = 170;
-            EmployeesDataGridView.Columns["PhoneNumber"].Width = 120;
-            EmployeesDataGridView.Columns["EmploymentDate"].Width = 80;
-            EmployeesDataGridView.Columns["EmploymentDate"].DefaultCellStyle.Format = "dd.MM.yyyy";
-            EmployeesDataGridView.Columns["RecordStatus"].Width = 100;
-            EmployeesDataGridView.Columns["DateOfDismissal"].Width = 80;
-            EmployeesDataGridView.Columns["DateOfDismissal"].DefaultCellStyle.Format = "dd.MM.yyyy";
-
-            DepartmentDataGridView.Columns["Id"].Width = 40;
-            DepartmentDataGridView.Columns["Name"].Width = 300;
-            DepartmentDataGridView.Columns["MainDepartmentName"].Width = 300;
-            DepartmentDataGridView.Columns["DirectorFullName"].Width = 300;
-            DepartmentDataGridView.Columns["RecordStatus"].Width = 220;
-        }
-
         private void AddEmployeeButton_Click(object sender, EventArgs e)
         {
             AddEmployeeForm addEmployeeForm = new AddEmployeeForm(_employeeRepository, _departmentRepository);
